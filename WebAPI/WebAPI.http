@@ -1,0 +1,29 @@
+@WebAPI_HostAddress = http://localhost:5033
+
+### Listar
+GET {{WebAPI_HostAddress}}/api/Ejemplo
+Accept: application/json
+
+### Obtener por id
+GET {{WebAPI_HostAddress}}/api/Ejemplo/00000000-0000-0000-0000-000000000000
+Accept: application/json
+
+### Crear
+POST {{WebAPI_HostAddress}}/api/Ejemplo
+Content-Type: application/json
+
+{
+  "name": "Ejemplo de prueba",
+  "date": "2026-09-06T00:00:00"
+}
+
+### Actualizar
+PUT {{WebAPI_HostAddress}}/api/Ejemplo/00000000-0000-0000-0000-000000000000
+Content-Type: application/json
+
+{
+  "name": "Nombre actualizado"
+}
+
+### Eliminar
+DELETE {{WebAPI_HostAddress}}/api/Ejemplo/00000000-0000-0000-0000-000000000000
