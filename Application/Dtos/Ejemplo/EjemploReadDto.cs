@@ -1,0 +1,9 @@
+namespace Application.Dtos.Ejemplo
+{
+    public class EjemploReadDto
+    {
+        public Guid Id { get; set; }
+        public string Name { get; set; } = string.Empty;
+        public DateTime Date { get; set; }
+    }
+}
